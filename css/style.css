@@ -1,0 +1,28 @@
+body {
+  background-color: gainsboro;
+  /* Use a system font, if none are available use an available sans-serif */
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 64px;
+  text-align: center;
+}
+
+.sqr:hover {
+  background-color: white;
+}
+
+#message:hover {
+  color:darkcyan;
+}
