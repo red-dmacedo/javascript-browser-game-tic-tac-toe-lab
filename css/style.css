@@ -1,28 +1,61 @@
 body {
-  background-color: gainsboro;
+  background-color: lightgray;
   /* Use a system font, if none are available use an available sans-serif */
   font-family: system-ui, sans-serif;
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width:auto;
+  background-image: url('https://images.freeimages.com/image/previews/abc/tropical-shore-cityscape-illustration-5695453.jpg?fmt=webp&h=350');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+/* h1 {
+  background-color: white;
+} */
 
 .board {
   display: flex;
   flex-wrap: wrap;
   width: 325px;
+  margin: 30px;
 }
 
 .sqr {
   width: 30%;
   aspect-ratio: 1/1;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   font-size: 64px;
   text-align: center;
+  margin: 3px;
+  border-color: white;
+  background-color:beige;
 }
 
 .sqr:hover {
   background-color: white;
 }
 
-#message:hover {
-  color:darkcyan;
+#reset {
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: large;
+}
+#reset:hover {
+  opacity: 0.7;
+}
+
+#com-button {
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+#com-button:hover {
+  opacity: 0.7;
 }
